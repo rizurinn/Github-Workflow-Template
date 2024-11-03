@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # Jalankan setiap ada push di branch 'main'
+  schedule:
+    - cron: "0 */5 * * *"  # Jalankan setiap 5 jam
 
 jobs:
   build:
@@ -11,7 +13,7 @@ jobs:
 
     steps:
     # Step 1: Clone the target repository
-    - name: Clone noxcv repository
+    - name: Clone LilyWa repository
       run: |
         git clone https://github.com/TanakaDomp/LilyWa.git
 
@@ -23,7 +25,7 @@ jobs:
     - name: Unzip lilybot.zip
       run: |
         sudo apt-get install unzip  # Install unzip tool if not already installed
-        unzip LilyWa/lilybot.zip -d ./noxcv  # Unzip lilybot.zip in the noxcv directory
+        unzip LilyWa/lilybot.zip -d ./LilyWa # Unzip lilybot.zip in the LilyWa directory
 
     # Step 4: Install npm dependencies
     - name: Install npm dependencies
