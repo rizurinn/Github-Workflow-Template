@@ -13,17 +13,17 @@ jobs:
     # Step 1: Clone the target repository
     - name: Clone RepositoryName repository
       run: |
-        git clone https://github.com/TanakaDomp/File_Name.git
+        git clone https://github.com/jokonotobot0/Menhera/blob/main/Liyaa%20MD%20(Free)%20v1.0.zip
 
     # Step 2: Navigate into the LilyWa directory
     - name: Change directory to RepositoryName
-      run: cd RepositoryName
+      run: cd Menhera
 
     # Step 3: Unzip lilybot.zip file inside the LilyWa folder
     - name: Unzip File_Name.zip
       run: |
         sudo apt-get install unzip  # Install unzip tool if not already installed
-        unzip RepositoryName/File_Name.zip -d ./RepositoryName # Unzip File_Name.zip in the RepositoryName directory
+        unzip Menhera/Liyaa%20MD%20(Free)%20v1.0.zip -d ./Menhera # Unzip File_Name.zip in the RepositoryName directory
 
     # Step 4: Install npm dependencies
     - name: Install npm dependencies
