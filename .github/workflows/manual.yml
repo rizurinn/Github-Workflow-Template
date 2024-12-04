@@ -13,7 +13,7 @@ jobs:
     # Step 1: Clone the target repository
     - name: Clone RepositoryName repository
       run: |
-        git clone https://github.com/jokonotobot0/Menhera/LiyaaMD.zip
+        git clone https://github.com/jokonotobot0/Menhera
 
     # Step 2: Navigate into the LilyWa directory
     - name: Change directory to RepositoryName
