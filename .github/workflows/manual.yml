@@ -23,7 +23,7 @@ jobs:
     - name: Unzip File_Name.zip
       run: |
         sudo apt-get install unzip  # Install unzip tool if not already installed
-        unzip Menhera/Liyaa%20MD%20(Free)%20v1.0.zip -d ./Menhera # Unzip File_Name.zip in the RepositoryName directory
+        unzip Menhera/LiyaaMD.zip -d ./Menhera # Unzip File_Name.zip in the RepositoryName directory
 
     # Step 4: Install npm dependencies
     - name: Install npm dependencies
