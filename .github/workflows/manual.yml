@@ -28,7 +28,7 @@ jobs:
     # Step 4: Install npm dependencies
     - name: Install npm dependencies
       run: |
-        cd RepositoryName
+        cd LylaaMD
         npm install
 
     # Step 5: Start the npm application
